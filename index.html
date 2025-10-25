@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طرح پیشنهادی پروژه: وب‌سایت املاک لوکس</title>
+    <!-- Load Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Define Luxury Palette Colors for High Contrast */
+        :root {
+            --color-dark-bg: #161A1D;     /* Deep Night Blue/Charcoal for body background */
+            --color-accent-gold: #D4AF37; /* Brighter, more vibrant Gold for accent/highlights */
+            --color-text-dark: #333333;   /* Dark Grey for readability on white container */
+        }
+        
+        /* Custom styling for a high-end feel */
+        body {
+            /* Apply the dark background to the body */
+            background-color: var(--color-dark-bg);
+            font-family: 'Inter', sans-serif;
+            text-align: right; /* Ensure all default text aligns right */
+        }
+        .proposal-container {
+            /* Explicitly set container to bright white to pop against the dark body */
+            background-color: #FFFFFF; 
+            /* Deeper shadow for floating effect on dark background */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+            /* Apply smooth fade-in animation on load */
+            animation: fadeIn 1.2s ease-out forwards;
+            opacity: 0; /* Start invisible for the animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .section-heading {
+            /* RTL Adjustment: Use border-right and padding-right with Gold accent */
+            border-right: 4px solid var(--color-accent-gold); 
+            padding-right: 1rem;
+            padding-left: 0; 
+        }
+        /* Custom shadow and transition for stage cards */
+        .stage-card {
+            transition: all 0.3s ease;
+        }
+        .stage-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        /* Custom styling for the interactive button */
+        .tour-button {
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        /* Button: Dark background for primary action on hover, text remains white */
+        .tour-button:hover {
+            background-color: var(--color-dark-bg); 
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .tour-button:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<!-- Applying the new luxury color scheme: Dark background, White container -->
+<body class="p-4 sm:p-8">
+
+    <div class="proposal-container max-w-5xl mx-auto rounded-xl p-6 sm:p-10 lg:p-12 text-[var(--color-text-dark)]">
+
+        <!-- Title Section -->
+        <header class="text-center mb-10 pb-6 border-b border-gray-200">
+            <!-- Main Title in Deep Charcoal Text -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--color-text-dark)] mb-2">
+                طرح پیشنهادی پروژه
+            </h1>
+            <!-- Subtitle in Darker Text -->
+            <p class="text-xl sm:text-2xl font-light text-gray-700">
+                وب‌سایت املاک و مستغلات لوکس
+            </p>
+        </header>
+
+        <!-- Overview -->
+        <section class="mb-10">
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">مرور کلی</h2>
+            <p class="text-lg leading-relaxed text-justify">
+                این طرح ساخت یک وب‌سایت <strong>شیک و کاربردی</strong> برای آژانس املاک <strong class="text-[var(--color-accent-gold)]">هلدینگ میراث</strong> را مشخص می‌کند. این آژانس به خریداران و فروشندگان <strong>املاک لوکس</strong> خدمات می‌دهد. هدف سایت این است که بهترین ملک‌ها را نشان دهد، شرکا و تخصص آژانس را معرفی کند، و تجربه‌ای <strong>واقعی و شخصی</strong> به مشتریان خاص ارائه دهد تا انتظارات بالای آن‌ها برآورده شود.
+            </p>
+        </section>
+
+        <!-- Objectives & Features - Side by Side on Desktop -->
+        <div class="lg:flex lg:space-x-10 mb-10 rtl:lg:space-x-reverse">
+
+            <!-- Objectives -->
+            <section class="lg:w-1/3 mb-8 lg:mb-0">
+                <!-- Section Heading Text in Gold Accent -->
+                <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">اهداف</h2>
+                <ul class="space-y-3 list-disc pr-5 list-outside">
+                    <li>رساندن حس <strong>اعتماد، خاص بودن، و تخصص</strong> از طریق طراحی و محتوای سایت.</li>
+                    <li>فراهم کردن ابزارهایی برای <strong>دیدن ملک‌ها به صورت واقعی</strong>، تا مشتری بتواند زندگی در آنجا را تصور کند.</li>
+                    <li>دادن <strong>پشتیبانی ۲۴ ساعته</strong> که هوش مصنوعی سریع و مشاوران انسانی ماهر را با هم ترکیب می‌کند.</li>
+                </ul>
+            </section>
+
+            <!-- Core Features -->
+            <section class="lg:w-2/3">
+                <!-- Section Heading Text in Gold Accent -->
+                <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">ویژگی‌های اصلی</h2>
+                <ul class="space-y-4">
+                    <li class="p-3 bg-gray-50 rounded-md">
+                        <strong class="text-[var(--color-accent-gold)]">معرفی شرکت و مشاوران:</strong> یک صفحه اصلی زیبا برای نمایش دیدگاه و تمرکز آژانس. صفحات جداگانه برای مشاوران و شرکا با اطلاعات کامل، سوابق و راه‌های تماس مشخص.
+                    </li>
+                    <li class="p-3 bg-gray-50 rounded-md">
+                        <strong class="text-[var(--color-accent-gold)]">لیست کامل ملک‌ها و جزئیات:</strong> یک بخش تمیز و حرفه‌ای برای نمایش ملک‌ها. هر ملک عکس‌های باکیفیت بالا، مشخصات اصلی، نقشه‌های طبقات و دکمه‌های تماس را دارد. نمایش ملک‌ها باید کاملاً با ظاهر لوکس آژانس هماهنگ باشد.
+                    </li>
+                    <!-- Interactive Virtual Tour Feature Block - Highlighted with Charcoal/Gold contrast -->
+                    <li class="p-3 bg-gray-100 rounded-md border border-gray-300 shadow-md">
+                        <strong class="text-[var(--color-text-dark)] flex items-center mb-2">
+                            <!-- SVG Icon color changed to Gold -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-[var(--color-accent-gold)]" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 7.772a.75.75 0 00.252 1.157l3.81 1.834a.75.75 0 00.564 0l3.81-1.834a.75.75 0 00.252-1.157 1.5 1.5 0 00-.776-2.19l-4.11-1.977a.75.75 0 00-.672 0L5.108 5.582a1.5 1.5 0 00-.776 2.19zM10 12a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                            </svg>
+                            تورهای مجازی و آشنایی با محله:
+                        </strong>
+                        <p class="mb-3 text-sm text-justify">امکان دیدن ملک‌ها با تورهای ۳۶۰ درجه و ویدیویی با کیفیت عالی. معرفی محله‌های اطراف و نکات مهم زندگی در آنجا (مثل مراکز مهم، مدارس، رستوران‌ها و دسترسی‌ها). لینک زیر، سطح غوطه‌وری مورد انتظار را نمایش می‌دهد.</p>
+                        <!-- Button color changed to Gold background, Deep Charcoal hover -->
+                        <a href="https://www.marzipano.net/demos/sample-tour/" target="_blank" class="tour-button inline-flex items-center rtl:flex-row-reverse px-4 py-2 border border-transparent text-sm font-medium rounded-md text-[var(--color-text-dark)] bg-[var(--color-accent-gold)] hover:bg-[var(--color-dark-bg)] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-accent-gold)]">
+                            مشاهده کانسپت تور زنده (لینک دمو)
+                            <!-- Icon placement adjusted for RTL: mr-2 -ml-1 instead of ml-2 -mr-1 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 -ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="p-3 bg-gray-50 rounded-md">
+                        <strong class="text-[var(--color-accent-gold)]">طراحی داخلی با هوش مصنوعی:</strong> ابزاری به نام "این فضا را طراحی کن" که به مشتریان اجازه می‌دهد ببینند فضای داخلی ملک با سلیقه آن‌ها چگونه خواهد شد. امکان ذخیره یا اشتراک‌گذاری این طراحی‌های لحظه‌ای با مشاوران.
+                    </li>
+                    <li class="p-3 bg-gray-50 rounded-md">
+                        <strong class="text-[var(--color-accent-gold)]">پشتیبانی ۲۴ ساعته (AI و انسان):</strong> یک ربات هوش مصنوعی برای پاسخ‌های سریع به سؤالات. در صورت نیاز، گفتگو به آسانی به یک مشاور انسانی برای خدمات شخصی منتقل می‌شود.
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Deliverables -->
+        <section class="mb-10">
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">دستاوردها (خروجی‌ها)</h2>
+            <ul class="space-y-2 list-disc pr-5 list-outside">
+                <li>صفحه اصلی و صفحات "درباره ما" با لوگو و رنگ‌های آژانس.</li>
+                <li>سیستم نمایش املاک که فقط برای ملک‌های خاص هلدینگ میراث طراحی شده.</li>
+                <li>بخش‌های مربوط به تورهای مجازی و معرفی کامل محله‌ها.</li>
+                <li>ابزارهای هوش مصنوعی برای طراحی داخلی و سیستم پشتیبانی.</li>
+                <li>راهنمای استفاده و آموزش‌های لازم برای کارمندان آژانس.</li>
+            </ul>
+        </section>
+
+        <!-- Three-Stage Development Plan -->
+        <section class="mb-10">
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-6 section-heading text-[var(--color-accent-gold)]">برنامه توسعه سه‌مرحله‌ای</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Stage 1 - Border changed to a subtle Gold/Charcoal gradient feel -->
+                <div class="stage-card p-6 rounded-lg border-t-4 border-[var(--color-accent-gold)] bg-gray-50">
+                    <div class="text-3xl font-extrabold text-[var(--color-accent-gold)] mb-2">مرحله ۱</div>
+                    <h3 class="text-xl font-semibold mb-3">معرفی برند و لیست املاک</h3>
+                    <p class="text-sm text-[var(--color-text-dark)] mb-4">تمرکز اصلی روی <strong>ساخت پایه سایت و نمایش ملک‌ها</strong>.</p>
+                    <ul class="space-y-2 text-xs text-gray-700 list-disc pr-4 list-outside">
+                        <li>ایجاد صفحه اصلی، معرفی کسب‌وکار، و بخش‌های پروفایل شرکا.</li>
+                        <li>توسعه یک سیستم لیستینگ ملک ممتاز که هویت برند هلدینگ میراث را منعکس کند.</li>
+                        <li>ارائه یک وب‌سایت کامل و کاربردی مناسب برای تعامل اولیه با مشتری و بازاریابی.</li>
+                    </ul>
+                </div>
+
+                <!-- Stage 2 - Border changed to a subtle Gold/Charcoal gradient feel -->
+                <div class="stage-card p-6 rounded-lg border-t-4 border-[var(--color-accent-gold)] bg-gray-50">
+                    <div class="text-3xl font-extrabold text-[var(--color-accent-gold)] mb-2">مرحله ۲</div>
+                    <h3 class="text-xl font-semibold mb-3">تجربه غوطه‌ورکننده: تورهای مجازی و پیش‌نمایش محله</h3>
+                    <p class="text-sm text-[var(--color-text-dark)] mb-4">بالا بردن جذابیت سایت با <strong>ابزارهای واقعی‌تر و اطلاعات مفیدتر</strong>.</p>
+                    <ul class="space-y-2 text-xs text-gray-700 list-disc pr-4 list-outside">
+                        <li>ادغام تورهای ویدیویی و ۳۶۰ درجه ملک.</li>
+                        <li>افزودن پیش‌نمایش محله با برجسته کردن سبک زندگی و موقعیت مکانی.</li>
+                        <li>بهینه‌سازی ناوبری و طرح‌بندی برای تأکید بر اکتشاف و حفظ مشتری.</li>
+                    </ul>
+                </div>
+
+                <!-- Stage 3 - Border changed to a subtle Gold/Charcoal gradient feel -->
+                <div class="stage-card p-6 rounded-lg border-t-4 border-[var(--color-accent-gold)] bg-gray-50">
+                    <div class="text-3xl font-extrabold text-[var(--color-accent-gold)] mb-2">مرحله ۳</div>
+                    <h3 class="text-xl font-semibold mb-3">گسترش هوشمند: بصری‌سازی هوش مصنوعی و پشتیبانی ۲۴ ساعته</h3>
+                    <p class="text-sm text-[var(--color-text-dark)] mb-4">اضافه کردن <strong>قابلیت‌های هوشمند و جدید با AI</strong> برای خدمات شخصی‌تر.</p>
+                    <ul class="space-y-2 text-xs text-gray-700 list-disc pr-4 list-outside">
+                        <li>پیاده‌سازی بصری‌سازی داخلی مبتنی بر هوش مصنوعی برای پیش‌نمایش طراحی بلادرنگ.</li>
+                        <li>ادغام دستیار هوش مصنوعی ۲۴ ساعته برای استعلام‌های مشتری با امکان ارجاع به مشاوران انسانی.</li>
+                        <li>نهایی‌سازی نظارت بر سیستم، تحلیل‌ و جمع‌آوری بازخورد برای بهبود مستمر.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Metrics & Next Steps - Stacked -->
+        <div class="space-y-10">
+            <section>
+                <!-- Section Heading Text in Gold Accent -->
+                <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">معیارهای موفقیت</h2>
+                <ul class="space-y-2 list-disc pr-5 list-outside">
+                    <li><strong>تأیید شدن ظاهر و برند لوکس</strong> سایت توسط مدیران آژانس.</li>
+                    <li><strong>بالا رفتن زمان بازدید مشتریان</strong> از سایت و افزایش تماس‌های دریافتی از بخش‌های جذاب.</li>
+                    <li><strong>سریع و مؤثر بودن پاسخ‌ها</strong> و بالا رفتن تعداد تبدیل‌ها از طریق پشتیبانی ۲۴ ساعته.</li>
+                </ul>
+            </section>
+
+            <section>
+                <!-- Section Heading Text in Gold Accent -->
+                <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">گام‌های بعدی</h2>
+                <ul class="space-y-2 list-disc pr-5 list-outside">
+                    <li>تأیید دامنه و اولویت‌های ویژگی.</li>
+                    <li>نهایی‌سازی دارایی‌های محتوایی (عکس‌ها، ویدیوها، متن‌ها، جزئیات شرکا).</li>
+                    <li>شروع توسعه مرحله ۱ و برنامه‌ریزی برای بازبینی ذینفعان در هر فاز.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Conclusion -->
+        <section class="mt-10 pt-6 border-t border-gray-300">
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-4 section-heading text-[var(--color-accent-gold)]">نتیجه‌گیری</h2>
+            <p class="text-lg leading-relaxed text-justify">
+                این پیشنهاد به دنبال ساخت یک <strong>پلتفرم دیجیتال عالی</strong> است که نشان‌دهنده ارزش‌ها، شیک بودن و تخصص هلدینگ میراث باشد. با این روش سه‌مرحله‌ای—ساخت برند، واقعی کردن تجربه و اضافه کردن ابزارهای هوشمند—این پروژه یک تجربه <strong>قوی و دائمی</strong> برای مشتریان املاک لوکس ایجاد خواهد کرد.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 pt-6 text-sm text-gray-500">
+            &copy; 2025 هلدینگ میراث - طرح پیشنهادی پروژه
+        </footer>
+
+    </div>
+</body>
+</html>
+
