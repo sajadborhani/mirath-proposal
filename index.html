@@ -69,6 +69,30 @@
             transform: translateY(0);
             box-shadow: none;
         }
+        
+        /* Styling for the new tables */
+        .proposal-table th, .proposal-table td {
+            padding: 0.75rem;
+            text-align: right;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .proposal-table th {
+            background-color: #f9fafb;
+            font-weight: 700;
+            color: var(--color-text-dark);
+        }
+        .proposal-table tr:hover {
+            background-color: #f3f4f6;
+        }
+        .proposal-table .total-row {
+            background-color: var(--color-accent-gold);
+            color: var(--color-dark-bg);
+            font-size: 1.125rem;
+            font-weight: 900;
+        }
+        .proposal-table .total-row td {
+            border-bottom: 2px solid var(--color-dark-bg);
+        }
     </style>
 </head>
 <!-- Applying the new luxury color scheme: Dark background, White container -->
@@ -150,7 +174,209 @@
                 </ul>
             </section>
         </div>
+        
+        <!-- NEW SECTION: Detailed Build Stages and Timeline -->
+        <section class="mb-10">
+            ---
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-6 section-heading text-[var(--color-accent-gold)]">برنامه اجرایی دقیق و زمان‌بندی</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full proposal-table border-collapse border border-gray-200 rounded-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white">مرحله</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white">فعالیت‌های اصلی</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-32">مدت زمان تقریبی</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <!-- Stage 1 -->
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)] border-r">۱: معرفی برند و لیست املاک</td>
+                            <td>طراحی و نهایی‌سازی UI/UX (صفحه اصلی، لیستینگ)</td>
+                            <td class="whitespace-nowrap">۴ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r"></td>
+                            <td>زیرساخت فنی (انتخاب فریم‌ورک، تنظیم سرور)</td>
+                            <td class="whitespace-nowrap">۲ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r"></td>
+                            <td>توسعه صفحات اصلی، معرفی آژانس و مشاوران</td>
+                            <td class="whitespace-nowrap">۴ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r border-b-2 border-gray-300"></td>
+                            <td>راه‌اندازی سیستم نمایش ملک (CMS/Database integration)</td>
+                            <td class="whitespace-nowrap border-b-2 border-gray-300">۳ هفته</td>
+                        </tr>
 
+                        <!-- Stage 2 -->
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)] border-r">۲: تجربه غوطه‌ورکننده</td>
+                            <td>پیاده‌سازی زیرساخت تور ۳۶۰ درجه و ویدیویی</td>
+                            <td class="whitespace-nowrap">۳ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r"></td>
+                            <td>توسعه بخش پیش‌نمایش محله (نقشه‌ها، POIs)</td>
+                            <td class="whitespace-nowrap">۳ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r border-b-2 border-gray-300"></td>
+                            <td>بهینه‌سازی ریسپانسیو و تست‌های عملکردی</td>
+                            <td class="whitespace-nowrap border-b-2 border-gray-300">۲ هفته</td>
+                        </tr>
+
+                        <!-- Stage 3 -->
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)] border-r">۳: گسترش هوشمند</td>
+                            <td>ادغام API هوش مصنوعی برای طراحی داخلی (AI Design Tool)</td>
+                            <td class="whitespace-nowrap">۴ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r"></td>
+                            <td>توسعه و آموزش چت‌بات پشتیبانی ۲۴ ساعته</td>
+                            <td class="whitespace-nowrap">۳ هفته</td>
+                        </tr>
+                        <tr>
+                            <td class="border-r"></td>
+                            <td>تست نهایی، رفع باگ و راه‌اندازی (Go-Live)</td>
+                            <td class="whitespace-nowrap">۲ هفته</td>
+                        </tr>
+
+                        <!-- Total Row -->
+                        <tr class="total-row">
+                            <td colspan="2" class="text-center">زمان‌بندی کل پروژه (از شروع فاز ۱ تا راه‌اندازی فاز ۳)</td>
+                            <td class="text-center whitespace-nowrap">۲۶ هفته (۶.۵ ماه)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- NEW SECTION: Manpower Requirements -->
+        <section class="mb-10">
+            ---
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-6 section-heading text-[var(--color-accent-gold)]">نیاز به منابع انسانی</h2>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full proposal-table border-collapse border border-gray-200 rounded-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-40">نقش</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white">وظایف اصلی</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-24">تعداد نفر</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-32">تخصیص زمانی (ماه)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)]">مدیر پروژه (PM)</td>
+                            <td>هماهنگی، ارتباط با مشتری، مدیریت زمان‌بندی و بودجه</td>
+                            <td class="text-center">۱</td>
+                            <td class="text-center">۶.۵</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)]">طراح UI/UX</td>
+                            <td>طراحی بصری، فلوچارت‌های تجربه کاربری و وایرفریم‌ها</td>
+                            <td class="text-center">۱</td>
+                            <td class="text-center">۳</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)]">توسعه‌دهنده فرانت‌اند</td>
+                            <td>پیاده‌سازی رابط کاربری ریسپانسیو، انیمیشن‌ها و تعاملات</td>
+                            <td class="text-center">۲</td>
+                            <td class="text-center">۵</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)]">توسعه‌دهنده بک‌اند</td>
+                            <td>مدیریت پایگاه داده، توسعه APIهای داخلی، امنیت سیستم</td>
+                            <td class="text-center">۱</td>
+                            <td class="text-center">۶.۵</td>
+                        </tr>
+                        <tr>
+                            <td class="font-bold text-[var(--color-accent-gold)]">مهندس AI/ML</td>
+                            <td>ادغام ابزارهای طراحی هوشمند و توسعه چت‌بات (پاره‌وقت)</td>
+                            <td class="text-center">۱</td>
+                            <td class="text-center">۳</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: Cost Approximation -->
+        <section class="mb-10">
+            ---
+            <!-- Section Heading Text in Gold Accent -->
+            <h2 class="text-2xl font-bold mb-6 section-heading text-[var(--color-accent-gold)]">برآورد هزینه اولیه (تخمینی)</h2>
+            <p class="mb-4 text-sm text-gray-700">این برآورد هزینه‌ای ساده‌شده و <strong>تنها برای بخش توسعه و راه‌اندازی</strong> پروژه است و شامل هزینه‌های بازاریابی و تولید محتوا (مانند تورهای ۳۶۰ درجه و عکس‌برداری) نمی‌باشد. تمامی ارقام به <strong>تومان</strong> (Toman) و تخمینی هستند.</p>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full proposal-table border-collapse border border-gray-200 rounded-lg">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white">شرح هزینه</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-32">تعداد/ماه</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-48">هزینه واحد (تومان)</th>
+                            <th class="py-3 px-6 bg-[var(--color-accent-gold)] text-white w-48">هزینه کل تخمینی (تومان)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white">
+                        <tr>
+                            <td><strong>طراحی UI/UX (پروژه کامل)</strong></td>
+                            <td class="text-center">۱ پروژه</td>
+                            <td class="text-right">۵۰,۰۰۰,۰۰۰</td>
+                            <td class="text-right">۵۰,۰۰۰,۰۰۰</td>
+                        </tr>
+                        <tr>
+                            <td><strong>توسعه فرانت‌اند و بک‌اند (۶.۵ ماه)</strong></td>
+                            <td class="text-center">۵.۵ نفر/ماه * ۶.۵ ماه</td>
+                            <td class="text-right">۷۰,۰۰۰,۰۰۰ (متوسط حقوق ماهانه تیم)</td>
+                            <td class="text-right">۳۸۵,۰۰۰,۰۰۰</td>
+                        </tr>
+                        <tr>
+                            <td><strong>توسعه قابلیت‌های AI (هزینه ثابت پیاده‌سازی)</strong></td>
+                            <td class="text-center">۱ پروژه</td>
+                            <td class="text-right">۸۰,۰۰۰,۰۰۰</td>
+                            <td class="text-right">۸۰,۰۰۰,۰۰۰</td>
+                        </tr>
+                        <tr>
+                            <td><strong>مصرف API هوش مصنوعی در طول توسعه (تست و آموزش)</strong></td>
+                            <td class="text-center">۶۰,۰۰۰ تماس</td>
+                            <td class="text-right">۳۰۰ (متوسط هزینه هر تماس)</td>
+                            <td class="text-right">۱۸,۰۰۰,۰۰۰</td>
+                        </tr>
+                        <tr>
+                            <td><strong>زیرساخت ابری (هاستینگ، پایگاه داده - سال اول)</strong></td>
+                            <td class="text-center">۱۲ ماه</td>
+                            <td class="text-right">۳,۰۰۰,۰۰۰</td>
+                            <td class="text-right">۳۶,۰۰۰,۰۰۰</td>
+                        </tr>
+                        <tr>
+                            <td><strong>نگهداری و پشتیبانی فنی (۳ ماه اول راه‌اندازی)</strong></td>
+                            <td class="text-center">۳ ماه</td>
+                            <td class="text-right">۱۰,۰۰۰,۰۰۰</td>
+                            <td class="text-right">۳۰,۰۰۰,۰۰۰</td>
+                        </tr>
+                        <tr class="total-row">
+                            <td colspan="3" class="text-center"><strong>جمع کل تخمینی (بدون مالیات و محتوا):</strong></td>
+                            <td class="text-right"><strong>۵۹۹,۰۰۰,۰۰۰</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- New Section for Operational Expenses (OPEX) -->
+            <p class="mt-4 text-base text-gray-700 p-3 bg-red-50 rounded-md border border-red-200">
+                <strong class="text-red-700">توجه به هزینه‌های عملیاتی (OPEX):</strong> علاوه بر هزینه‌های اولیه توسعه (CAPEX) فوق، هزینه ماهانه تقریبی برای مصرف API هوش مصنوعی در فاز عملیاتی، با فرض ۱۰۰ تماس در روز (۳,۰۰۰ تماس در ماه) و نرخ متوسط ۳۰۰ تومان به ازای هر تماس، حدود <strong class="text-red-700">۹۰۰,۰۰۰ تومان در ماه</strong> خواهد بود. این هزینه، <strong class="text-red-700">۱۰,۸۰۰,۰۰۰ تومان در سال</strong> را به هزینه‌های جاری عملیاتی پروژه اضافه می‌کند.
+            </p>
+        </section>
+        
         <!-- Deliverables -->
         <section class="mb-10">
             <!-- Section Heading Text in Gold Accent -->
@@ -164,10 +390,10 @@
             </ul>
         </section>
 
-        <!-- Three-Stage Development Plan -->
+        <!-- Three-Stage Development Plan (Simplified Summary - kept for context) -->
         <section class="mb-10">
             <!-- Section Heading Text in Gold Accent -->
-            <h2 class="text-2xl font-bold mb-6 section-heading text-[var(--color-accent-gold)]">برنامه توسعه سه‌مرحله‌ای</h2>
+            <h2 class="text-2xl font-bold mb-6 section-heading text-[var(--color-accent-gold)]">برنامه توسعه سه‌مرحله‌ای (خلاصه)</h2>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Stage 1 - Border changed to a subtle Gold/Charcoal gradient feel -->
@@ -178,31 +404,28 @@
                     <ul class="space-y-2 text-xs text-gray-700 list-disc pr-4 list-outside">
                         <li>ایجاد صفحه اصلی، معرفی کسب‌وکار، و بخش‌های پروفایل شرکا.</li>
                         <li>توسعه یک سیستم لیستینگ ملک ممتاز که هویت برند هلدینگ میراث را منعکس کند.</li>
-                        <li>ارائه یک وب‌سایت کامل و کاربردی مناسب برای تعامل اولیه با مشتری و بازاریابی.</li>
                     </ul>
                 </div>
 
                 <!-- Stage 2 - Border changed to a subtle Gold/Charcoal gradient feel -->
                 <div class="stage-card p-6 rounded-lg border-t-4 border-[var(--color-accent-gold)] bg-gray-50">
                     <div class="text-3xl font-extrabold text-[var(--color-accent-gold)] mb-2">مرحله ۲</div>
-                    <h3 class="text-xl font-semibold mb-3">تجربه غوطه‌ورکننده: تورهای مجازی و پیش‌نمایش محله</h3>
+                    <h3 class="text-xl font-semibold mb-3">تجربه غوطه‌ورکننده</h3>
                     <p class="text-sm text-[var(--color-text-dark)] mb-4">بالا بردن جذابیت سایت با <strong>ابزارهای واقعی‌تر و اطلاعات مفیدتر</strong>.</p>
                     <ul class="space-y-2 text-xs text-gray-700 list-disc pr-4 list-outside">
                         <li>ادغام تورهای ویدیویی و ۳۶۰ درجه ملک.</li>
                         <li>افزودن پیش‌نمایش محله با برجسته کردن سبک زندگی و موقعیت مکانی.</li>
-                        <li>بهینه‌سازی ناوبری و طرح‌بندی برای تأکید بر اکتشاف و حفظ مشتری.</li>
                     </ul>
                 </div>
 
                 <!-- Stage 3 - Border changed to a subtle Gold/Charcoal gradient feel -->
                 <div class="stage-card p-6 rounded-lg border-t-4 border-[var(--color-accent-gold)] bg-gray-50">
                     <div class="text-3xl font-extrabold text-[var(--color-accent-gold)] mb-2">مرحله ۳</div>
-                    <h3 class="text-xl font-semibold mb-3">گسترش هوشمند: بصری‌سازی هوش مصنوعی و پشتیبانی ۲۴ ساعته</h3>
+                    <h3 class="text-xl font-semibold mb-3">گسترش هوشمند</h3>
                     <p class="text-sm text-[var(--color-text-dark)] mb-4">اضافه کردن <strong>قابلیت‌های هوشمند و جدید با AI</strong> برای خدمات شخصی‌تر.</p>
                     <ul class="space-y-2 text-xs text-gray-700 list-disc pr-4 list-outside">
-                        <li>پیاده‌سازی بصری‌سازی داخلی مبتنی بر هوش مصنوعی برای پیش‌نمایش طراحی بلادرنگ.</li>
-                        <li>ادغام دستیار هوش مصنوعی ۲۴ ساعته برای استعلام‌های مشتری با امکان ارجاع به مشاوران انسانی.</li>
-                        <li>نهایی‌سازی نظارت بر سیستم، تحلیل‌ و جمع‌آوری بازخورد برای بهبود مستمر.</li>
+                        <li>پیاده‌سازی بصری‌سازی داخلی مبتنی بر هوش مصنوعی.</li>
+                        <li>ادغام دستیار هوش مصنوعی ۲۴ ساعته.</li>
                     </ul>
                 </div>
             </div>
